@@ -194,7 +194,7 @@ ALL['Max'].plot(figsize=(10, 5));plt.title('ALL Markets')
 # Last four Graphs
 fig, axes = plt.subplots(nrows=2, ncols=2, figsize=(20, 10))
 fig.subplots_adjust(hspace=1.0) ## Create space between plots
-
+#print(daily.head(6))
 daily.loc['FL']['CustomerCount']['2012':].fillna(method='pad').plot(ax=axes[0,0])
 daily.loc['GA']['CustomerCount']['2012':].fillna(method='pad').plot(ax=axes[0,1]) 
 daily.loc['TX']['CustomerCount']['2012':].fillna(method='pad').plot(ax=axes[1,0]) 
